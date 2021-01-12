@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
         let fuelLevel = document.querySelector("input[name=fuelLevel]").value;
         let cargoMass = document.querySelector("input[name=cargoMass]").value;
 
-        if (isNaN(fuelLevel) || isNaN(cargoMass)) {
+        if (isNaN(fuelLevel) || isNaN(cargoMass) || !isNaN(pilotName) || !isNaN(copilotName)) {
             alert("Make sure to enter valid information for each field.");
             event.preventDefault();
         } else if (fuelLevel < 10000) {
